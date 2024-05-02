@@ -117,7 +117,7 @@ namespace ConsoleApplication1
 
             
             var encryptMsg = ECCEncryption.Encrypt("message", publicKey);
-            var message = ECCEncryption.Decrypt(encryptMsg, privateKey, "");
+            var message = ECCEncryption.Decrypt(encryptMsg, privateKey);
             Console.WriteLine(message);
         }
     }
